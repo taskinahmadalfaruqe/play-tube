@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="picture/favicon.png" type="image/x-icon">
+    <title>PH Tube</title>
+
+    <!-- TAILWIND CSS LINK    -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- GOOGLE FONT LINK  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+
+    <!-- FONT AWESOME LINK  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- TAILWIND CONFIG  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            container: {
+                width: '1240px',
+                center : true,
+                padding: {
+                    DEFAULT: '10px',
+                    sm: '10px',
+                    lg: '1rem',
+                    xl: '2rem',
+                    '2xl': '3rem',
+                },
+                },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+
+</head>
+<body class="text-black">
+    <header>
+        <!-- NAV BAR PART START  -->
+        <nav class="my-3 lg:mb-8 ">
+            <div class="container text-white ">
+                <div class="navbar flex justify-between px-1 lg:px-[20px]">
+                    <div class=" flex justify-start flex-1">
+                        <div class="logo ">
+                        <a href="index.html">
+                            <div class="image flex items-start justify-start gap-3">
+                                <img src="./picture/Logo.png" alt="Logo">
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-1 justify-end">
+                        <button onclick="backToIndex()" id="backToIndex" class="btn border-[1px] border-black hover:bg-[#FF1F3D] hover:text-white">Index Page</button>
+                    </div>
+                </div>
+                <hr class="mt-3 border-black">
+            </div>
+        </nav>
+        <!-- NAV BAR PART END -->
+    </header>
+    <main class="my-5">
+        <section>
+            <div class="container">
+                <div class="question">
+                    <p class="p-2 bg-green-200 rounded-md mb-5 uppercase"> Q: Discuss the scope of var, let, and const.</p>
+                    <p class="p-5 rounded-md bg-purple-100 mb-10 uppercase">Answer: <br> <br>
+                        var:
+                        <br>
+                        JavaScript Variables can be declared in 4 ways. var is one of them. but is have some rejection. var is not a block-scoped. we can get value any where is our site. It Hoisting  the value
+                        <br>
+                        <br>
+                        let:
+                        <br>
+                        The keyword let in Javascript is used to declare a block-scoped variable in JavaScript. when we can declare a variable with let we can't access it outside the function or statement. But our variable is global we can access it anywhere in js. It can't Hoisting  the value.
+                        <br>
+                        <br>
+                        const:
+                        <br>
+                        The keyword const in Javascript is used to declare a block-scoped variable in JavaScript. Change the elements of constant array, Change the properties of constant object. but cant do Reassign a constant value, Reassign a constant array, Reassign a constant object and its also inaccessible outside the statement or function. It can't Hoisting  the value.
+                     </p>
+                    <p class="p-2 bg-green-200 rounded-md mb-5 uppercase"> Q: Tell us the use cases of null and undefined.</p>
+                    <p class="p-5 rounded-md bg-purple-100 mb-10 uppercase">Answer: <br> <br>
+                        UNDEFINED:
+                        <br>
+                        01. VARIABLE WITHOUT VALUE <br>
+                        02. FUNCTION WITHOUT RETURN <br>
+                        03. FUNCTION WITHOUT PARAMETER VALUE <br>
+                        04. NOTHIG RETURN FROM A FUNCTION <br>
+                        05. DON’T EXIST A OBJECT PROPERTY <br>
+                        06. ACCESS A ARRY OUT OF RANGE <br>
+                        07. DELETE A ARRAY VALUE<br>
+                        08. SET A VALUE DIRECTLY UNDEFINED <br>
+                        <br>
+                        <br>
+                        NULL:
+                        <br>
+                        1. CHECK A VALUE, IF ITS ABSENCE WE USE NULL <br>
+                        2. IF WE SET A VARIABLE VALUE NULL WHEN WE NEED IT.
+                     </p>
+                    <p class="p-2 bg-green-200 rounded-md mb-5 uppercase"> Q: What do you mean by REST API?.</p>
+                    <p class="p-5 rounded-md bg-purple-100 mb-10 uppercase">Answer: <br> <br>
+                        RESET API:
+                        <br>
+                        A REST API is a way of easily accessing web services. When we call it, its make a connection between web server and web page and dynamically lode server data into web lay out. 
+                     </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/blog.js"></script>
+</body>
+</html>
