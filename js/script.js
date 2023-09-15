@@ -48,11 +48,12 @@ const getCategoryElement = async (categoryId, isButtonClicked) => {
 };
 
 const lodeCategoryCard = (isButtonClicked) => {
-  let cardPlace = document.getElementById('cardContainer');
+  const cardPlace = document.getElementById('cardContainer');
   let noDataCardPlace = document.getElementById('noDataCard');
   
-  cardPlace.innerHTML = '';
-  
+  cardPlace.innerHTML =  '';
+  noDataCardPlace.innerHTML = '';
+
   // Sort the video data by views if needed.
   if (isButtonClicked) {
     newDataOFArray.sort((a, b) => {
@@ -65,7 +66,6 @@ const lodeCategoryCard = (isButtonClicked) => {
   let arrayLength = newDataOFArray.length;
 
   if (arrayLength > 0) {
-    noDataCardPlace.innerHTML = '';
     newDataOFArray.forEach((singleCard) => {
         const timeSecond =singleCard.others.posted_date;
         let min = Math.floor(timeSecond/60);
